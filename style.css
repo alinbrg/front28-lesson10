@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+[type="checkbox"] {
+	accent-color: red;
+}
+
+label {
+	font-size: 30px;
+	/* display: block; */
+}
+
+textarea {
+	resize: none;
+	width: 300px;
+	height: 100px;
+}
+
+input {
+	/* display: block; */
+	border: 1px solid #ccc;
+	padding: 10px;
+	outline: none;
+	border-radius: 5px;
+	color: darkblue;
+	font-size: 24px;
+	background-color: antiquewhite;
+}
+
+[type="file"] {
+	display: none;
+}
+
+input::placeholder {
+	color: darkgoldenrod;
+}
+
+select {
+	padding: 10px;
+	outline: none;
+}
+
+.form-group:has([type="file"]) {
+	border: 1px solid darkcyan;
+	padding: 10px;
+	text-align: center;
+}
+.form-group:has([type="file"]) label {
+	display: block;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}

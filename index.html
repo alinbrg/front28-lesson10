@@ -38,6 +38,124 @@
 		/>
 	</head>
 	<body>
-		<h1>meta tags and form elements</h1>
+		<section>
+			<div class="container">
+				<h1>meta tags and form elements</h1>
+				<form action="#" method="GET" id="registration-form">
+					<div class="form-group">
+						<label for="user-name">user name</label>
+						<input
+							type="text"
+							id="user-name"
+							name="user-name"
+							placeholder="enter your name"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="user-age">user age</label>
+						<input
+							type="number"
+							id="user-age"
+							name="user-age"
+							placeholder="enter your age"
+							min="1"
+							max="100"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="user-email">user email</label>
+						<input
+							type="email"
+							id="user-email"
+							name="user-email"
+							placeholder="enter your email"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="user-password">user password</label>
+						<input
+							type="password"
+							id="user-password"
+							name="user-password"
+							placeholder="enter your password"
+							minlength="6"
+							maxlength="20"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="user-image"> <span>&&&&&</span>user image</label>
+
+						<input
+							type="file"
+							id="user-image"
+							name="user-image"
+							accept=".pdf"
+						/>
+					</div>
+
+					<div class="form-group">
+						<label for="datetime">datetime</label>
+						<input type="datetime-local" id="datetime" name="datetime" />
+					</div>
+
+					<div>
+						<label for="user-terms">
+							<input type="checkbox" id="user-terms" name="user-terms" />
+							<span>accept terms and conditions</span>
+						</label>
+						<label for="user-terms2">
+							<input type="checkbox" id="user-terms2" name="user-terms2" />
+							<span>user-terms 2</span>
+						</label>
+					</div>
+
+					<div>
+						<label for="male">
+							<input type="radio" id="male" name="gender" />
+							<span>male</span>
+						</label>
+						<label for="female">
+							<input type="radio" id="female" name="gender" />
+							<span>female</span>
+						</label>
+					</div>
+
+					<div>
+						<label for="user-message">user message</label>
+						<textarea name="user-message" id="user-message"></textarea>
+					</div>
+
+					<div>
+						<label for="user-city">user city</label>
+						<select name="user-city" id="user-city">
+							<option value="option1">tbilis</option>
+							<option value="option2">batumi</option>
+							<option value="option3">kutaisi</option>
+						</select>
+					</div>
+
+					<div>
+						<label for="user-country">user country</label>
+						<input
+							list="country-select"
+							id="user-country"
+							name="user-country"
+						/>
+						<datalist id="country-select">
+							<option value="Georgia"></option>
+							<option value="Armenia"></option>
+							<option value="Azerbaijan"></option>
+							<option value="Turkey"></option>
+						</datalist>
+					</div>
+
+					<!-- <label for="user-name">
+						<span>იუზერის სახელი</span>
+						<input type="text" id="user-name" />
+					</label> -->
+					<button type="submit">submit</button>
+				</form>
+			</div>
+		</section>
 	</body>
 </html>
